@@ -38,8 +38,13 @@ export function SiteHeader() {
     setOpenedOn(value ? pathname : null);
   };
 
+  // "/" is exact-match only. The prefix test below would otherwise be
+  // checking startsWith("//"), which is false everywhere and so gives
+  // the right answer for the wrong reason — a trap for the next edit.
   const isActive = (href: string) =>
-    pathname === href || pathname.startsWith(`${href}/`);
+    href === "/"
+      ? pathname === "/"
+      : pathname === href || pathname.startsWith(`${href}/`);
 
   useEffect(() => {
     // Read once on mount as well as on scroll: a restored scroll

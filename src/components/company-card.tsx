@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import type { Company } from "@/lib/site";
+import { SiteImage, companyLeadSlot } from "./site-image";
 import { companyPath } from "@/lib/site";
 
 /**
@@ -18,6 +19,12 @@ export function CompanyCard({ company }: { company: Company }) {
         href={companyPath(company.slug)}
         className="lift flex h-full flex-col rounded-[4px] border border-[var(--rule)] bg-[var(--surface)] p-6 hover:border-[var(--rule-strong)] hover:bg-[var(--surface-soft)] md:p-7"
       >
+        <SiteImage
+          slot={companyLeadSlot(company.slug) ?? ""}
+          aspect="aspect-[16/9]"
+          className="mb-5"
+          sizes="(min-width: 1024px) 22rem, (min-width: 640px) 45vw, 100vw"
+        />
         <p className="meta-label mb-3">{company.sectorShort}</p>
         <h3 className="display text-[1.3rem] leading-snug text-[var(--text)]">
           {company.name}

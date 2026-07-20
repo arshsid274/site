@@ -39,124 +39,64 @@
       "height": 3072
     }
   },
-  "sector-medical": {
-    "page": "/companies/uzima-medical-services",
-    "note": "Supplies and packaging. No patients, no clinical staff, no ward or building exterior.",
-    "image": {
-      "src": "/images/lamer-holdings-sector-medical.jpg",
-      "alt": "Pharmaceutical packaging and medical consumables",
-      "safety": "CAPTION",
-      "provider": "pixabay",
-      "providerLabel": "Pixabay",
-      "licence": "Pixabay Content Licence",
-      "attributionRequired": false,
-      "photographer": "multifacetedgirl",
-      "photographerUrl": "https://pixabay.com/users/multifacetedgirl-2309891/",
-      "sourceUrl": "https://pixabay.com/photos/medicine-vials-bottle-treatment-1309148/",
-      "credit": "Photo by multifacetedgirl on Pixabay",
-      "query": "pharmaceutical vials medicine bottles",
-      "width": 6480,
-      "height": 4320
-    }
-  },
-  "sector-food": {
-    "page": "/companies/manze-food-services",
-    "note": "Commercial and institutional scale. Rustic kitchen or recipe imagery misrepresents the business.",
-    "image": {
-      "src": "/images/lamer-holdings-sector-food.jpg",
-      "alt": "Bulk food goods in a distribution warehouse",
-      "safety": "CAPTION",
-      "provider": "pixabay",
-      "providerLabel": "Pixabay",
-      "licence": "Pixabay Content Licence",
-      "attributionRequired": false,
-      "photographer": "jaymethunt",
-      "photographerUrl": "https://pixabay.com/users/jaymethunt-12275/",
-      "sourceUrl": "https://pixabay.com/photos/warehouse-pallet-food-product-box-485241/",
-      "credit": "Photo by jaymethunt on Pixabay",
-      "query": "food warehouse pallets storage",
-      "width": 5312,
-      "height": 2988
-    }
-  },
-  "sector-construction": {
-    "page": "/companies/zil-engineering-construction",
-    "note": "Generic site imagery is acceptable with a caption. Do not caption it as a Lamer project.",
-    "image": {
-      "src": "/images/lamer-holdings-sector-construction.jpg",
-      "alt": "Construction site with tower crane",
-      "safety": "CAPTION",
-      "provider": "pixabay",
-      "providerLabel": "Pixabay",
-      "licence": "Pixabay Content Licence",
-      "attributionRequired": false,
-      "photographer": "kalhh",
-      "photographerUrl": "https://pixabay.com/users/kalhh-86169/",
-      "sourceUrl": "https://pixabay.com/photos/crane-construction-crane-load-crane-325038/",
-      "credit": "Photo by kalhh on Pixabay",
-      "query": "construction site crane building",
-      "width": 4272,
-      "height": 2848
-    }
-  },
-  "sector-machinery": {
-    "page": "/companies/lorizon-machinery-spare-parts",
+  "about-governance": {
+    "page": "/about",
     "note": null,
     "image": {
-      "src": "/images/lamer-holdings-sector-machinery.jpg",
-      "alt": "Heavy construction and earthmoving machinery",
+      "src": "/images/lamer-holdings-about-governance.jpg",
+      "alt": "Boardroom table",
       "safety": "CAPTION",
       "provider": "pixabay",
       "providerLabel": "Pixabay",
       "licence": "Pixabay Content Licence",
       "attributionRequired": false,
-      "photographer": "The_Northern_Photographer",
-      "photographerUrl": "https://pixabay.com/users/The_Northern_Photographer-49449853/",
-      "sourceUrl": "https://pixabay.com/photos/tractor-farmer-agriculture-field-9779346/",
-      "credit": "Photo by The_Northern_Photographer on Pixabay",
-      "query": "tractor agricultural machinery field",
-      "width": 4573,
-      "height": 3049
+      "photographer": "StockSnap",
+      "photographerUrl": "https://pixabay.com/users/StockSnap-894430/",
+      "sourceUrl": "https://pixabay.com/photos/white-room-office-table-chairs-2591360/",
+      "credit": "Photo by StockSnap on Pixabay",
+      "query": "corporate boardroom office",
+      "width": 4920,
+      "height": 3280
     }
   },
-  "sector-aviation": {
-    "page": "/companies/elite-airlines-aviation-services",
-    "note": "Cargo handling only, with a visible source caption. Never an identifiable aircraft livery or tail number: it is verifiable in seconds, and this company does not operate aircraft at all.",
+  "about-domicile": {
+    "page": "/about",
+    "note": "Seychelles context. Never captioned as an operating location.",
     "image": {
-      "src": "/images/lamer-holdings-sector-aviation.jpg",
-      "alt": "Air cargo pallets at a freight terminal",
+      "src": "/images/lamer-holdings-about-domicile.jpg",
+      "alt": "Indian Ocean island coastline",
       "safety": "CAPTION",
       "provider": "pixabay",
       "providerLabel": "Pixabay",
       "licence": "Pixabay Content Licence",
       "attributionRequired": false,
-      "photographer": "Lenzpointer",
-      "photographerUrl": "https://pixabay.com/users/Lenzpointer-5001209/",
-      "sourceUrl": "https://pixabay.com/photos/airplane-cargo-bay-transportation-2214497/",
-      "credit": "Photo by Lenzpointer on Pixabay",
-      "query": "cargo loading aircraft freight",
-      "width": 5112,
-      "height": 3412
+      "photographer": "EN-design",
+      "photographerUrl": "https://pixabay.com/users/EN-design-13033044/",
+      "sourceUrl": "https://pixabay.com/photos/seychelles-granite-rocks-island-5170504/",
+      "credit": "Photo by EN-design on Pixabay",
+      "query": "tropical island granite coast",
+      "width": 3816,
+      "height": 2507
     }
   },
-  "sector-energy": {
-    "page": "/companies/edenco-oil-and-gas",
-    "note": "Fuel logistics and storage. Caption it so no reader takes the facility to be theirs.",
+  "about-trade": {
+    "page": "/about",
+    "note": null,
     "image": {
-      "src": "/images/lamer-holdings-sector-energy.jpg",
-      "alt": "Bulk fuel storage tanks",
+      "src": "/images/lamer-holdings-about-trade.jpg",
+      "alt": "Distribution warehouse racking",
       "safety": "CAPTION",
       "provider": "pixabay",
       "providerLabel": "Pixabay",
       "licence": "Pixabay Content Licence",
       "attributionRequired": false,
-      "photographer": "Capt-M",
-      "photographerUrl": "https://pixabay.com/users/Capt-M-15288434/",
-      "sourceUrl": "https://pixabay.com/photos/oil-storage-tank-crude-oil-5015840/",
-      "credit": "Photo by Capt-M on Pixabay",
-      "query": "oil storage tanks terminal",
-      "width": 4000,
-      "height": 1824
+      "photographer": "tianya1223",
+      "photographerUrl": "https://pixabay.com/users/tianya1223-4833799/",
+      "sourceUrl": "https://pixabay.com/photos/store-stacks-shelves-stock-5619201/",
+      "credit": "Photo by tianya1223 on Pixabay",
+      "query": "distribution warehouse racking",
+      "width": 6000,
+      "height": 4000
     }
   },
   "sustainability-texture": {
@@ -177,6 +117,746 @@
       "query": "coastline aerial ocean",
       "width": 5464,
       "height": 3640
+    }
+  },
+  "sustain-safety": {
+    "page": "/sustainability",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-sustain-safety.jpg",
+      "alt": "Personal protective equipment",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "thekurupi",
+      "photographerUrl": "https://pixabay.com/users/thekurupi-3657708/",
+      "sourceUrl": "https://pixabay.com/photos/weld-welding-welder-work-mask-1788679/",
+      "credit": "Photo by thekurupi on Pixabay",
+      "query": "safety gloves helmet industrial",
+      "width": 8192,
+      "height": 5460
+    }
+  },
+  "sustain-environment": {
+    "page": "/sustainability",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-sustain-environment.jpg",
+      "alt": "Waste management and recycling",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "mostafa_meraji",
+      "photographerUrl": "https://pixabay.com/users/mostafa_meraji-13551092/",
+      "sourceUrl": "https://pixabay.com/photos/waste-social-documentary-iranian-7038412/",
+      "credit": "Photo by mostafa_meraji on Pixabay",
+      "query": "recycling waste management industrial",
+      "width": 5472,
+      "height": 3648
+    }
+  },
+  "sustain-people": {
+    "page": "/sustainability",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-sustain-people.jpg",
+      "alt": "Technical training",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "ThMilherou",
+      "photographerUrl": "https://pixabay.com/users/ThMilherou-5808126/",
+      "sourceUrl": "https://pixabay.com/photos/workshop-carpenter-crafts-artisan-4863393/",
+      "credit": "Photo by ThMilherou on Pixabay",
+      "query": "vocational training workshop",
+      "width": 4928,
+      "height": 3264
+    }
+  },
+  "sustain-governance": {
+    "page": "/sustainability",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-sustain-governance.jpg",
+      "alt": "Compliance documentation",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "advogadoaguilar",
+      "photographerUrl": "https://pixabay.com/users/advogadoaguilar-18212864/",
+      "sourceUrl": "https://pixabay.com/photos/right-advocacy-lex-attorney-jura-4703934/",
+      "credit": "Photo by advogadoaguilar on Pixabay",
+      "query": "legal document pen signature",
+      "width": 6720,
+      "height": 4480
+    }
+  },
+  "contact-office": {
+    "page": "/contact",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-contact-office.jpg",
+      "alt": "Correspondence desk",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "andrewlloydgordon",
+      "photographerUrl": "https://pixabay.com/users/andrewlloydgordon-1509776/",
+      "sourceUrl": "https://pixabay.com/photos/hand-man-watch-work-desk-1076597/",
+      "credit": "Photo by andrewlloydgordon on Pixabay",
+      "query": "business letters envelopes desk",
+      "width": 4858,
+      "height": 3239
+    }
+  },
+  "fraud-security": {
+    "page": "/fraud-alert",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-fraud-security.jpg",
+      "alt": "Email and correspondence security",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "TheDigitalWay",
+      "photographerUrl": "https://pixabay.com/users/TheDigitalWay-3008341/",
+      "sourceUrl": "https://pixabay.com/photos/computer-security-padlock-hacker-1591018/",
+      "credit": "Photo by TheDigitalWay on Pixabay",
+      "query": "cyber security padlock laptop",
+      "width": 5597,
+      "height": 3661
+    }
+  },
+  "uzima-equipment": {
+    "page": "/companies/uzima-medical-services",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-uzima-equipment.jpg",
+      "alt": "Hospital medical equipment",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "DominiqueVince",
+      "photographerUrl": "https://pixabay.com/users/DominiqueVince-976409/",
+      "sourceUrl": "https://pixabay.com/photos/hospital-a-e-emergency-1477433/",
+      "credit": "Photo by DominiqueVince on Pixabay",
+      "query": "hospital ward equipment",
+      "width": 2765,
+      "height": 1417
+    }
+  },
+  "uzima-lab": {
+    "page": "/companies/uzima-medical-services",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-uzima-lab.jpg",
+      "alt": "Laboratory reagents and diagnostic consumables",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "AhmadArdity",
+      "photographerUrl": "https://pixabay.com/users/AhmadArdity-3112014/",
+      "sourceUrl": "https://pixabay.com/photos/sample-lab-laboratory-scientist-4944424/",
+      "credit": "Photo by AhmadArdity on Pixabay",
+      "query": "blood sample tubes rack",
+      "width": 4557,
+      "height": 3389
+    }
+  },
+  "uzima-consumables": {
+    "page": "/companies/uzima-medical-services",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-uzima-consumables.jpg",
+      "alt": "Sterile medical consumables",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "msumuh",
+      "photographerUrl": "https://pixabay.com/users/msumuh-1308760/",
+      "sourceUrl": "https://pixabay.com/photos/bandages-band-aid-wound-care-908873/",
+      "credit": "Photo by msumuh on Pixabay",
+      "query": "bandages medical supplies",
+      "width": 3108,
+      "height": 2020
+    }
+  },
+  "uzima-buyers": {
+    "page": "/companies/uzima-medical-services",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-uzima-buyers.jpg",
+      "alt": "Hospital interior",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "Pexels",
+      "photographerUrl": "https://pixabay.com/users/Pexels-2286921/",
+      "sourceUrl": "https://pixabay.com/photos/medications-tablets-medicine-cure-1853400/",
+      "credit": "Photo by Pexels on Pixabay",
+      "query": "hospital pharmacy counter",
+      "width": 3874,
+      "height": 2583
+    }
+  },
+  "manze-sourcing": {
+    "page": "/companies/manze-food-services",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-manze-sourcing.jpg",
+      "alt": "Bulk raw materials in sacks",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "Couleur",
+      "photographerUrl": "https://pixabay.com/users/Couleur-1195798/",
+      "sourceUrl": "https://pixabay.com/photos/potatoes-vegetables-tuber-1585075/",
+      "credit": "Photo by Couleur on Pixabay",
+      "query": "raw ingredients sacks warehouse",
+      "width": 4896,
+      "height": 3264
+    }
+  },
+  "manze-processing": {
+    "page": "/companies/manze-food-services",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-manze-processing.jpg",
+      "alt": "Food processing line",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "premiumfoodz",
+      "photographerUrl": "https://pixabay.com/users/premiumfoodz-18557289/",
+      "sourceUrl": "https://pixabay.com/photos/eggs-eggshells-production-quality-5622995/",
+      "credit": "Photo by premiumfoodz on Pixabay",
+      "query": "food processing factory line",
+      "width": 6000,
+      "height": 4000
+    }
+  },
+  "manze-distribution": {
+    "page": "/companies/manze-food-services",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-manze-distribution.jpg",
+      "alt": "Food goods in a distribution warehouse",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "jaymethunt",
+      "photographerUrl": "https://pixabay.com/users/jaymethunt-12275/",
+      "sourceUrl": "https://pixabay.com/photos/warehouse-pallet-food-product-box-485240/",
+      "credit": "Photo by jaymethunt on Pixabay",
+      "query": "food warehouse pallets storage",
+      "width": 5312,
+      "height": 2988
+    }
+  },
+  "manze-buyers": {
+    "page": "/companies/manze-food-services",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-manze-buyers.jpg",
+      "alt": "Commercial catering kitchen",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "vitesca",
+      "photographerUrl": "https://pixabay.com/users/vitesca-6483235/",
+      "sourceUrl": "https://pixabay.com/photos/big-kitchen-kitchen-work-kitchen-2765065/",
+      "credit": "Photo by vitesca on Pixabay",
+      "query": "commercial kitchen catering",
+      "width": 5760,
+      "height": 3840
+    }
+  },
+  "zil-building": {
+    "page": "/companies/zil-engineering-construction",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-zil-building.jpg",
+      "alt": "Building under construction",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "kalhh",
+      "photographerUrl": "https://pixabay.com/users/kalhh-86169/",
+      "sourceUrl": "https://pixabay.com/photos/crane-construction-crane-load-crane-325038/",
+      "credit": "Photo by kalhh on Pixabay",
+      "query": "building construction site crane",
+      "width": 4272,
+      "height": 2848
+    }
+  },
+  "zil-civil": {
+    "page": "/companies/zil-engineering-construction",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-zil-civil.jpg",
+      "alt": "Civil engineering earthworks",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "MemoryCatcher",
+      "photographerUrl": "https://pixabay.com/users/MemoryCatcher-168384/",
+      "sourceUrl": "https://pixabay.com/photos/bulldozer-crawler-earth-moving-410120/",
+      "credit": "Photo by MemoryCatcher on Pixabay",
+      "query": "civil engineering earthworks excavation",
+      "width": 2939,
+      "height": 1393
+    }
+  },
+  "zil-renovation": {
+    "page": "/companies/zil-engineering-construction",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-zil-renovation.jpg",
+      "alt": "Building renovation with scaffolding",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "652234",
+      "photographerUrl": "https://pixabay.com/users/652234-652234/",
+      "sourceUrl": "https://pixabay.com/photos/framework-architecture-building-3328433/",
+      "credit": "Photo by 652234 on Pixabay",
+      "query": "facade restoration scaffolding",
+      "width": 4482,
+      "height": 2989
+    }
+  },
+  "zil-materials": {
+    "page": "/companies/zil-engineering-construction",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-zil-materials.jpg",
+      "alt": "Construction materials on site",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "652234",
+      "photographerUrl": "https://pixabay.com/users/652234-652234/",
+      "sourceUrl": "https://pixabay.com/photos/building-monierisen-construction-3734383/",
+      "credit": "Photo by 652234 on Pixabay",
+      "query": "steel rebar construction materials",
+      "width": 4446,
+      "height": 2964
+    }
+  },
+  "zil-management": {
+    "page": "/companies/zil-engineering-construction",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-zil-management.jpg",
+      "alt": "Construction drawings and project plans",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "mwitt1337",
+      "photographerUrl": "https://pixabay.com/users/mwitt1337-889520/",
+      "sourceUrl": "https://pixabay.com/photos/drawing-architecture-plans-2284505/",
+      "credit": "Photo by mwitt1337 on Pixabay",
+      "query": "construction drawings plans desk",
+      "width": 6000,
+      "height": 3376
+    }
+  },
+  "zil-safety": {
+    "page": "/companies/zil-engineering-construction",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-zil-safety.jpg",
+      "alt": "Site safety equipment",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "This_is_Engineering",
+      "photographerUrl": "https://pixabay.com/users/This_is_Engineering-11384528/",
+      "sourceUrl": "https://pixabay.com/photos/solar-panel-solar-panels-8499901/",
+      "credit": "Photo by This_is_Engineering on Pixabay",
+      "query": "construction safety helmet ppe",
+      "width": 8192,
+      "height": 5464
+    }
+  },
+  "lorizon-construction": {
+    "page": "/companies/lorizon-machinery-spare-parts",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-lorizon-construction.jpg",
+      "alt": "Heavy construction machinery",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "dimitrisvetsikas1969",
+      "photographerUrl": "https://pixabay.com/users/dimitrisvetsikas1969-1857980/",
+      "sourceUrl": "https://pixabay.com/photos/bulldozer-excavator-heavy-machine-2195329/",
+      "credit": "Photo by dimitrisvetsikas1969 on Pixabay",
+      "query": "excavator construction machinery",
+      "width": 6000,
+      "height": 4000
+    }
+  },
+  "lorizon-agri": {
+    "page": "/companies/lorizon-machinery-spare-parts",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-lorizon-agri.jpg",
+      "alt": "Agricultural machinery",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "orko46",
+      "photographerUrl": "https://pixabay.com/users/orko46-16495679/",
+      "sourceUrl": "https://pixabay.com/photos/combine-harvester-harvest-farm-6491174/",
+      "credit": "Photo by orko46 on Pixabay",
+      "query": "combine harvester agriculture",
+      "width": 4000,
+      "height": 2250
+    }
+  },
+  "lorizon-industrial": {
+    "page": "/companies/lorizon-machinery-spare-parts",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-lorizon-industrial.jpg",
+      "alt": "Industrial machinery",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "blickpixel",
+      "photographerUrl": "https://pixabay.com/users/blickpixel-52945/",
+      "sourceUrl": "https://pixabay.com/photos/milling-drill-cutting-tools-444493/",
+      "credit": "Photo by blickpixel on Pixabay",
+      "query": "cnc machine industrial",
+      "width": 6016,
+      "height": 4016
+    }
+  },
+  "lorizon-parts": {
+    "page": "/companies/lorizon-machinery-spare-parts",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-lorizon-parts.jpg",
+      "alt": "Spare parts inventory",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "Counselling",
+      "photographerUrl": "https://pixabay.com/users/Counselling-440107/",
+      "sourceUrl": "https://pixabay.com/photos/gear-workshop-spare-part-metal-443674/",
+      "credit": "Photo by Counselling on Pixabay",
+      "query": "spare parts warehouse shelves",
+      "width": 4621,
+      "height": 3047
+    }
+  },
+  "lorizon-maintenance": {
+    "page": "/companies/lorizon-machinery-spare-parts",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-lorizon-maintenance.jpg",
+      "alt": "Machinery maintenance workshop",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "DokaRyan",
+      "photographerUrl": "https://pixabay.com/users/DokaRyan-9003441/",
+      "sourceUrl": "https://pixabay.com/photos/auto-repair-oil-change-oil-auto-3691962/",
+      "credit": "Photo by DokaRyan on Pixabay",
+      "query": "engine repair workshop tools",
+      "width": 6000,
+      "height": 4000
+    }
+  },
+  "lorizon-commissioning": {
+    "page": "/companies/lorizon-machinery-spare-parts",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-lorizon-commissioning.jpg",
+      "alt": "Machine installation and technical support",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "RonaldPlett",
+      "photographerUrl": "https://pixabay.com/users/RonaldPlett-5139674/",
+      "sourceUrl": "https://pixabay.com/photos/piston-hand-holding-engine-3483519/",
+      "credit": "Photo by RonaldPlett on Pixabay",
+      "query": "technician machine repair industrial",
+      "width": 6016,
+      "height": 4016
+    }
+  },
+  "elite-cargohold": {
+    "page": "/companies/elite-airlines-aviation-services",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-elite-cargohold.jpg",
+      "alt": "Cargo aircraft hold",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "Lenzpointer",
+      "photographerUrl": "https://pixabay.com/users/Lenzpointer-5001209/",
+      "sourceUrl": "https://pixabay.com/photos/airplane-cargo-bay-transportation-2214497/",
+      "credit": "Photo by Lenzpointer on Pixabay",
+      "query": "cargo loading aircraft freight",
+      "width": 5112,
+      "height": 3412
+    }
+  },
+  "elite-terminal": {
+    "page": "/companies/elite-airlines-aviation-services",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-elite-terminal.jpg",
+      "alt": "Air freight terminal",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "dewikinanthi",
+      "photographerUrl": "https://pixabay.com/users/dewikinanthi-4040632/",
+      "sourceUrl": "https://pixabay.com/photos/forklift-industry-vehicle-shipment-2660508/",
+      "credit": "Photo by dewikinanthi on Pixabay",
+      "query": "cargo handling warehouse",
+      "width": 5312,
+      "height": 2988
+    }
+  },
+  "elite-ops": {
+    "page": "/companies/elite-airlines-aviation-services",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-elite-ops.jpg",
+      "alt": "Flight operations centre",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "SpaceX-Imagery",
+      "photographerUrl": "https://pixabay.com/users/SpaceX-Imagery-885857/",
+      "sourceUrl": "https://pixabay.com/photos/space-center-spacex-control-center-693264/",
+      "credit": "Photo by SpaceX-Imagery on Pixabay",
+      "query": "control room monitors operations",
+      "width": 3000,
+      "height": 2000
+    }
+  },
+  "elite-apron": {
+    "page": "/companies/elite-airlines-aviation-services",
+    "note": "Ground operations only. Never a readable aircraft livery or registration.",
+    "image": {
+      "src": "/images/lamer-holdings-elite-apron.jpg",
+      "alt": "Airport apron operations",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "Powie",
+      "photographerUrl": "https://pixabay.com/users/Powie-1550508/",
+      "sourceUrl": "https://pixabay.com/photos/runway-airfield-airport-landing-1227526/",
+      "credit": "Photo by Powie on Pixabay",
+      "query": "airport runway apron",
+      "width": 4600,
+      "height": 3448
+    }
+  },
+  "elite-documents": {
+    "page": "/companies/elite-airlines-aviation-services",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-elite-documents.jpg",
+      "alt": "Freight documentation",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "HarinathR",
+      "photographerUrl": "https://pixabay.com/users/HarinathR-1906917/",
+      "sourceUrl": "https://pixabay.com/photos/evaluation-exam-passed-list-1516644/",
+      "credit": "Photo by HarinathR on Pixabay",
+      "query": "cargo checklist clipboard",
+      "width": 5760,
+      "height": 3840
+    }
+  },
+  "edenco-storage": {
+    "page": "/companies/edenco-oil-and-gas",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-edenco-storage.jpg",
+      "alt": "Bulk fuel storage tanks",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "Capt-M",
+      "photographerUrl": "https://pixabay.com/users/Capt-M-15288434/",
+      "sourceUrl": "https://pixabay.com/photos/oil-storage-tank-crude-oil-5015840/",
+      "credit": "Photo by Capt-M on Pixabay",
+      "query": "oil storage tanks terminal",
+      "width": 4000,
+      "height": 1824
+    }
+  },
+  "edenco-lubricants": {
+    "page": "/companies/edenco-oil-and-gas",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-edenco-lubricants.jpg",
+      "alt": "Lubricant containers",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "Pieter01",
+      "photographerUrl": "https://pixabay.com/users/Pieter01-208771/",
+      "sourceUrl": "https://pixabay.com/photos/oil-barrels-metal-barrel-fuel-302563/",
+      "credit": "Photo by Pieter01 on Pixabay",
+      "query": "lubricant oil drums barrels",
+      "width": 4912,
+      "height": 3264
+    }
+  },
+  "edenco-gas": {
+    "page": "/companies/edenco-oil-and-gas",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-edenco-gas.jpg",
+      "alt": "Gas cylinders in storage",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "Mcability",
+      "photographerUrl": "https://pixabay.com/users/Mcability-114690/",
+      "sourceUrl": "https://pixabay.com/photos/gas-cylinder-cooking-fuel-power-288173/",
+      "credit": "Photo by Mcability on Pixabay",
+      "query": "lpg gas cylinders storage",
+      "width": 1920,
+      "height": 1920
+    }
+  },
+  "edenco-pipework": {
+    "page": "/companies/edenco-oil-and-gas",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-edenco-pipework.jpg",
+      "alt": "Industrial pipework and valves",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "Tama66",
+      "photographerUrl": "https://pixabay.com/users/Tama66-1032521/",
+      "sourceUrl": "https://pixabay.com/photos/tube-valve-heating-industry-5146458/",
+      "credit": "Photo by Tama66 on Pixabay",
+      "query": "pipeline valves detail industrial",
+      "width": 6021,
+      "height": 4006
+    }
+  },
+  "edenco-logistics": {
+    "page": "/companies/edenco-oil-and-gas",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-edenco-logistics.jpg",
+      "alt": "Fuel loading at a terminal",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "Freiheitsjunkie",
+      "photographerUrl": "https://pixabay.com/users/Freiheitsjunkie-2526729/",
+      "sourceUrl": "https://pixabay.com/photos/ship-freighter-tanker-oil-5562741/",
+      "credit": "Photo by Freiheitsjunkie on Pixabay",
+      "query": "tanker loading terminal fuel",
+      "width": 5184,
+      "height": 3456
+    }
+  },
+  "edenco-quality": {
+    "page": "/companies/edenco-oil-and-gas",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-edenco-quality.jpg",
+      "alt": "Fuel quality testing",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "fernandozhiminaicela",
+      "photographerUrl": "https://pixabay.com/users/fernandozhiminaicela-6246704/",
+      "sourceUrl": "https://pixabay.com/photos/lab-experiment-test-chemistry-3498584/",
+      "credit": "Photo by fernandozhiminaicela on Pixabay",
+      "query": "fuel sample testing laboratory",
+      "width": 3872,
+      "height": 2592
     }
   }
 }

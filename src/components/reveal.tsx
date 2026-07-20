@@ -67,7 +67,19 @@ function useRevealOnce<T extends HTMLElement>() {
     );
 
     io.observe(el);
-    return () => io.disconnect();
+
+    // Failsafe. The observer only fires for a viewport that actually
+    // scrolls. Print, PDF capture, full-page screenshot tools and
+    // non-scrolling crawlers never trigger it, and would otherwise
+    // render a page of invisible sections. For a site whose audience
+    // includes automated compliance and banking review, content that
+    // depends on scrolling to become visible is not acceptable.
+    const failsafe = window.setTimeout(show, 2500);
+
+    return () => {
+      window.clearTimeout(failsafe);
+      io.disconnect();
+    };
   }, []);
 
   return ref;

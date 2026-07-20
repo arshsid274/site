@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { COMPANIES, SITE, companyPath } from "@/lib/site";
 import { ContactForm } from "@/components/contact-form";
+import { SiteImage } from "@/components/site-image";
 import {
   Container,
   DefRow,
@@ -217,7 +218,8 @@ export default function ContactPage() {
       </Section>
 
       <Section width="prose">
-        <SectionTitle serif>Send us a message</SectionTitle>
+<SiteImage slot="contact-office" aspect="aspect-[21/9]" className="mb-10" sizes="45rem" />
+                <SectionTitle serif>Send us a message</SectionTitle>
         <div className="mt-7">
           <Suspense
             fallback={

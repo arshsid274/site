@@ -37,7 +37,7 @@ export function SiteFooter() {
               Site
             </p>
             <ul className="space-y-2">
-              {[{ href: "/", label: "Home" }, ...NAV].map((item) => (
+              {NAV.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}

@@ -136,3 +136,110 @@ export function ImageCredits() {
     </ul>
   );
 }
+
+/* ------------------------------------------------------------------
+   Per-company image sets, in the order the page presents them.
+   Slots that produced nothing usable are simply absent: a page with
+   four accurate photographs is worth more than one with seven where
+   three are wrong.
+   ------------------------------------------------------------------ */
+
+export const COMPANY_IMAGES: Record<string, string[]> = {
+  "uzima-medical-services": [
+    "uzima-lab",
+    "uzima-equipment",
+    "uzima-consumables",
+    "uzima-buyers",
+  ],
+  "manze-food-services": [
+    "manze-processing",
+    "manze-sourcing",
+    "manze-distribution",
+    "manze-buyers",
+  ],
+  "zil-engineering-construction": [
+    "zil-building",
+    "zil-civil",
+    "zil-materials",
+    "zil-renovation",
+    "zil-management",
+    "zil-safety",
+  ],
+  "lorizon-machinery-spare-parts": [
+    "lorizon-construction",
+    "lorizon-agri",
+    "lorizon-industrial",
+    "lorizon-parts",
+    "lorizon-maintenance",
+    "lorizon-commissioning",
+  ],
+  "elite-airlines-aviation-services": [
+    "elite-cargohold",
+    "elite-terminal",
+    "elite-apron",
+    "elite-ops",
+    "elite-documents",
+  ],
+  "edenco-oil-and-gas": [
+    "edenco-storage",
+    "edenco-logistics",
+    "edenco-lubricants",
+    "edenco-gas",
+    "edenco-pipework",
+    "edenco-quality",
+  ],
+};
+
+/** The image that represents a company on cards and index pages. */
+export function companyLeadSlot(slug: string): string | null {
+  return COMPANY_IMAGES[slug]?.[0] ?? null;
+}
+
+/**
+ * A grid of sourced photographs. One shared caption carries the
+ * illustrative disclaimer for the set rather than repeating it under
+ * every tile, which at six tiles becomes noise and stops being read.
+ */
+export function ImageGrid({
+  slots,
+  columns = 3,
+  className = "",
+}: {
+  slots: string[];
+  columns?: 2 | 3;
+  className?: string;
+}) {
+  const items = slots.map((s) => [s, resolve(IMAGES[s])] as const).filter(([, i]) => i);
+  if (!items.length) return null;
+
+  return (
+    <figure className={className}>
+      <ul
+        className={`grid gap-3 sm:grid-cols-2 ${columns === 3 ? "lg:grid-cols-3" : ""}`}
+      >
+        {items.map(([slot, img]) => (
+          <li key={slot}>
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[4px] border border-[var(--rule)] bg-[var(--surface-soft)]">
+              <Image
+                src={img!.src}
+                alt={img!.alt}
+                fill
+                sizes="(min-width: 1024px) 22rem, (min-width: 640px) 45vw, 100vw"
+                className="object-cover"
+              />
+            </div>
+            <p className="mt-1.5 text-[0.75rem] leading-snug text-[var(--text-muted)]">
+              {img!.alt}
+            </p>
+          </li>
+        ))}
+      </ul>
+      <figcaption className="mt-4 text-[0.75rem] leading-relaxed text-[var(--text-muted)]">
+        Photographs licensed from{" "}
+        {[...new Set(items.map(([, i]) => i!.providerLabel))].join(" and ")}.
+        Illustrative of the sector; none is a photograph of a Lamer Holdings
+        operation, facility or asset.
+      </figcaption>
+    </figure>
+  );
+}

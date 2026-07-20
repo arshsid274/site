@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { COMPANIES, SITE, companyPath } from "@/lib/site";
-import { SiteImage } from "@/components/site-image";
+import { SiteImage, ImageGrid } from "@/components/site-image";
 import {
   Container,
   DefRow,
@@ -373,6 +373,11 @@ export default function SustainabilityPage() {
           Zero serious injuries is the objective against which we manage our
           operations. It is a target, not a claim about past performance.
         </p>
+
+        <ImageGrid
+          slots={["sustain-safety", "sustain-environment", "sustain-people", "sustain-governance"]}
+          className="mt-12"
+        />
       </Section>
 
       {/* Per-sector materiality. Also the hub that links to all six

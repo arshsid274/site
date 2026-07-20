@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
+import { SiteImage } from "@/components/site-image";
 import {
   Container,
   DefRow,
@@ -65,6 +66,7 @@ export default function FraudAlertPage() {
       </Container>
 
       <Section width="prose">
+        <SiteImage slot="fraud-security" aspect="aspect-[21/9]" className="mb-10" sizes="45rem" />
         <SectionTitle serif>
           How to verify a genuine communication
         </SectionTitle>

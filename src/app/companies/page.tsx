@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { COMPANIES, companyPath } from "@/lib/site";
+import { SiteImage, companyLeadSlot } from "@/components/site-image";
 import {
   ButtonLink,
   Container,
@@ -82,6 +83,12 @@ export default function CompaniesPage() {
               className="grid gap-4 border-b border-[var(--rule)] py-8 md:grid-cols-12 md:gap-8 md:py-10"
             >
               <div className="md:col-span-4">
+                <SiteImage
+                  slot={companyLeadSlot(c.slug) ?? ""}
+                  aspect="aspect-[16/9]"
+                  className="mb-4"
+                  sizes="(min-width: 768px) 20rem, 100vw"
+                />
                 <p className="meta-label mb-2">{c.sectorShort}</p>
                 <h2 className="display text-[1.4rem] leading-snug">
                   <Link

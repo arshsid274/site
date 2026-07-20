@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { COMPANIES, SITE } from "@/lib/site";
 import { GroupStructure } from "@/components/group-structure";
-import { SiteImage } from "@/components/site-image";
+import { SiteImage, ImageGrid } from "@/components/site-image";
 import {
   Container,
   DefRow,
@@ -175,6 +175,11 @@ export default function AboutPage() {
         <div className="mt-8 max-w-[52rem]">
           <GroupStructure columns={3} />
         </div>
+
+        <ImageGrid
+          slots={["about-trade", "about-governance", "about-domicile"]}
+          className="mt-12"
+        />
 
         <div className="mt-10 overflow-x-auto">
           <table className="w-full min-w-[34rem] text-left text-[0.9375rem]">

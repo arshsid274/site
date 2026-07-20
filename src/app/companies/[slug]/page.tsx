@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { SiteImage } from "@/components/site-image";
+import { SiteImage, ImageGrid, COMPANY_IMAGES } from "@/components/site-image";
 import { COMPANIES, SITE, getCompany, companyPath } from "@/lib/site";
 import {
   ButtonLink,
@@ -14,16 +14,6 @@ import {
   TextLink,
   Placeholder,
 } from "@/components/primitives";
-
-/** Company slug to image slot in the fetched-image manifest. */
-const IMAGE_SLOT: Record<string, string> = {
-  "uzima-medical-services": "sector-medical",
-  "manze-food-services": "sector-food",
-  "zil-engineering-construction": "sector-construction",
-  "lorizon-machinery-spare-parts": "sector-machinery",
-  "elite-airlines-aviation-services": "sector-aviation",
-  "edenco-oil-and-gas": "sector-energy",
-};
 
 export function generateStaticParams() {
   return COMPANIES.map((c) => ({ slug: c.slug }));
@@ -158,7 +148,7 @@ export default async function CompanyPage(
               text is written so it cannot be read as a claim of ownership. */}
           <div className="lg:col-span-5 lg:pt-2">
             <SiteImage
-              slot={IMAGE_SLOT[company.slug]}
+              slot={COMPANY_IMAGES[company.slug]?.[0] ?? ""}
               aspect="aspect-[4/3]"
               sizes="(min-width: 1024px) 28rem, 100vw"
             />
@@ -202,6 +192,11 @@ export default async function CompanyPage(
             staffed today and which are planned, stated line by line
           </Placeholder>
         </p>
+
+        <ImageGrid
+          slots={(COMPANY_IMAGES[company.slug] ?? []).slice(1)}
+          className="mt-12"
+        />
       </Section>
 
       {/* The process narrative. This is the section that carries the
