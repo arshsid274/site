@@ -1,0 +1,182 @@
+{
+  "home-hero": {
+    "page": "/",
+    "note": "Trade and shipping. Says what the group does; a generic port is not a claimed asset.",
+    "image": {
+      "src": "/images/lamer-holdings-home-hero.jpg",
+      "alt": "Container ship and port terminal",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "dendoktoor",
+      "photographerUrl": "https://pixabay.com/users/dendoktoor-14802912/",
+      "sourceUrl": "https://pixabay.com/photos/container-ship-container-transport-6631117/",
+      "credit": "Photo by dendoktoor on Pixabay",
+      "query": "cargo ship containers sea",
+      "width": 5417,
+      "height": 3611
+    }
+  },
+  "about-texture": {
+    "page": "/about",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-about-texture.jpg",
+      "alt": "Freight containers at a logistics terminal",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "TungArt7",
+      "photographerUrl": "https://pixabay.com/users/TungArt7-38741244/",
+      "sourceUrl": "https://pixabay.com/photos/logistics-terminal-shipping-shipping-10172920/",
+      "credit": "Photo by TungArt7 on Pixabay",
+      "query": "cargo ship aerial ocean",
+      "width": 5504,
+      "height": 3072
+    }
+  },
+  "sector-medical": {
+    "page": "/companies/uzima-medical-services",
+    "note": "Supplies and packaging. No patients, no clinical staff, no ward or building exterior.",
+    "image": {
+      "src": "/images/lamer-holdings-sector-medical.jpg",
+      "alt": "Pharmaceutical packaging and medical consumables",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "multifacetedgirl",
+      "photographerUrl": "https://pixabay.com/users/multifacetedgirl-2309891/",
+      "sourceUrl": "https://pixabay.com/photos/medicine-vials-bottle-treatment-1309148/",
+      "credit": "Photo by multifacetedgirl on Pixabay",
+      "query": "pharmaceutical vials medicine bottles",
+      "width": 6480,
+      "height": 4320
+    }
+  },
+  "sector-food": {
+    "page": "/companies/manze-food-services",
+    "note": "Commercial and institutional scale. Rustic kitchen or recipe imagery misrepresents the business.",
+    "image": {
+      "src": "/images/lamer-holdings-sector-food.jpg",
+      "alt": "Bulk food goods in a distribution warehouse",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "jaymethunt",
+      "photographerUrl": "https://pixabay.com/users/jaymethunt-12275/",
+      "sourceUrl": "https://pixabay.com/photos/warehouse-pallet-food-product-box-485241/",
+      "credit": "Photo by jaymethunt on Pixabay",
+      "query": "food warehouse pallets storage",
+      "width": 5312,
+      "height": 2988
+    }
+  },
+  "sector-construction": {
+    "page": "/companies/zil-engineering-construction",
+    "note": "Generic site imagery is acceptable with a caption. Do not caption it as a Lamer project.",
+    "image": {
+      "src": "/images/lamer-holdings-sector-construction.jpg",
+      "alt": "Construction site with tower crane",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "kalhh",
+      "photographerUrl": "https://pixabay.com/users/kalhh-86169/",
+      "sourceUrl": "https://pixabay.com/photos/crane-construction-crane-load-crane-325038/",
+      "credit": "Photo by kalhh on Pixabay",
+      "query": "construction site crane building",
+      "width": 4272,
+      "height": 2848
+    }
+  },
+  "sector-machinery": {
+    "page": "/companies/lorizon-machinery-spare-parts",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-sector-machinery.jpg",
+      "alt": "Heavy construction and earthmoving machinery",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "The_Northern_Photographer",
+      "photographerUrl": "https://pixabay.com/users/The_Northern_Photographer-49449853/",
+      "sourceUrl": "https://pixabay.com/photos/tractor-farmer-agriculture-field-9779346/",
+      "credit": "Photo by The_Northern_Photographer on Pixabay",
+      "query": "tractor agricultural machinery field",
+      "width": 4573,
+      "height": 3049
+    }
+  },
+  "sector-aviation": {
+    "page": "/companies/elite-airlines-aviation-services",
+    "note": "Cargo handling only, with a visible source caption. Never an identifiable aircraft livery or tail number: it is verifiable in seconds, and this company does not operate aircraft at all.",
+    "image": {
+      "src": "/images/lamer-holdings-sector-aviation.jpg",
+      "alt": "Air cargo pallets at a freight terminal",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "Lenzpointer",
+      "photographerUrl": "https://pixabay.com/users/Lenzpointer-5001209/",
+      "sourceUrl": "https://pixabay.com/photos/airplane-cargo-bay-transportation-2214497/",
+      "credit": "Photo by Lenzpointer on Pixabay",
+      "query": "cargo loading aircraft freight",
+      "width": 5112,
+      "height": 3412
+    }
+  },
+  "sector-energy": {
+    "page": "/companies/edenco-oil-and-gas",
+    "note": "Fuel logistics and storage. Caption it so no reader takes the facility to be theirs.",
+    "image": {
+      "src": "/images/lamer-holdings-sector-energy.jpg",
+      "alt": "Bulk fuel storage tanks",
+      "safety": "CAPTION",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "Capt-M",
+      "photographerUrl": "https://pixabay.com/users/Capt-M-15288434/",
+      "sourceUrl": "https://pixabay.com/photos/oil-storage-tank-crude-oil-5015840/",
+      "credit": "Photo by Capt-M on Pixabay",
+      "query": "oil storage tanks terminal",
+      "width": 4000,
+      "height": 1824
+    }
+  },
+  "sustainability-texture": {
+    "page": "/sustainability",
+    "note": null,
+    "image": {
+      "src": "/images/lamer-holdings-sustainability-texture.jpg",
+      "alt": "Coastline seen from above",
+      "safety": "SAFE",
+      "provider": "pixabay",
+      "providerLabel": "Pixabay",
+      "licence": "Pixabay Content Licence",
+      "attributionRequired": false,
+      "photographer": "Udayjot",
+      "photographerUrl": "https://pixabay.com/users/Udayjot-31352744/",
+      "sourceUrl": "https://pixabay.com/photos/sea-ocean-beach-aerial-view-summer-7629517/",
+      "credit": "Photo by Udayjot on Pixabay",
+      "query": "coastline aerial ocean",
+      "width": 5464,
+      "height": 3640
+    }
+  }
+}

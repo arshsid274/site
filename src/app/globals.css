@@ -1,26 +1,467 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ============================================================
+   Lamer Holdings design tokens
+   Source of truth: ../DESIGN.md (derived from logo.png)
+
+   The governing constraint: brand teal #3989A4 scores 3.97:1 on
+   white. It FAILS WCAG AA for body text and for white-on-teal
+   fills. teal-600/700 carry every interactive surface. Brand teal
+   is limited to the logo, large display accents, borders, icons
+   and focus rings, where the requirement is only 3:1.
+   ============================================================ */
+
+@theme {
+  /* Brand, sampled from logo.png */
+  --color-brand-teal: #3989a4;
+  --color-brand-navy: #062a45;
+
+  /* Teal ramp, hue-locked to 195deg */
+  --color-teal-50: #f0f5f7;
+  --color-teal-100: #dfe9ec;
+  --color-teal-200: #b3d8e5;
+  --color-teal-300: #7ebdd2;
+  --color-teal-400: #49a2c0;
+  --color-teal-500: #3989a4;
+  --color-teal-600: #2f7288;
+  --color-teal-700: #265c6e;
+  --color-teal-800: #1d4653;
+  --color-teal-900: #14313b;
+
+  /* Ink */
+  --color-ink: #062a45;
+  --color-ink-secondary: #3f5b71;
+  --color-ink-muted: #5c7387;
+
+  /* Neutrals, navy-tinted at 206deg */
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f7f9fb;
+  --color-neutral-100: #f1f4f6;
+  --color-neutral-200: #e4e9ec;
+  --color-neutral-300: #d2d8dd;
+  --color-neutral-400: #9faab2;
+  --color-neutral-500: #70828f;
+  --color-neutral-600: #516370;
+  --color-neutral-700: #344755;
+  --color-neutral-800: #1c303f;
+  --color-neutral-900: #0c202f;
+
+  /* Surfaces */
+  --color-canvas: #ffffff;
+  --color-canvas-soft: #f7f9fb;
+  --color-canvas-tint: #f0f5f7;
+  --color-canvas-dark: #0a1f2e;
+  --color-hairline: #d5dfe5;
+  --color-hairline-strong: #b9c7d0;
+
+  /* Semantic, hue-harmonised to the brand, all AA on white */
+  --color-success: #1e7a5f;
+  --color-warning: #8a5a16;
+  --color-danger: #a32b2b;
+  --color-info: #265c6e;
+
+  /* Type */
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-source-serif), Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, "SF Mono", monospace;
+
+  /* Radius. 4px is the ceiling for buttons and cards. */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  /* Shadows tinted with navy ink, never neutral black */
+  --shadow-sm: 0 1px 2px rgb(6 42 69 / 0.06);
+  --shadow-md: 0 4px 12px rgb(6 42 69 / 0.08);
+  --shadow-lg: 0 12px 32px rgb(6 42 69 / 0.12);
+
+  /* ----------------------------------------------------------
+     Motion
+
+     Custom curves, because the CSS built-in keywords are too
+     weak to read as deliberate. `ease-out` in particular is
+     nearly linear over its first third, which is the exact
+     window the eye is watching. --ease-brand front-loads the
+     movement so an entrance registers immediately and settles
+     slowly; that reads as composed rather than as sluggish.
+
+     ease-in is never used. It withholds motion at the moment
+     the user is looking hardest, and the same duration feels
+     measurably slower for it.
+
+     Durations split into two families:
+
+       press/fast/base   interaction feedback. Held inside the
+                         150-200ms band DESIGN.md specifies.
+       enter             entrances, which are not feedback and
+                         do not obey that band. A 180ms scroll
+                         reveal is perceived as a rendering
+                         fault rather than as motion; it needs
+                         roughly 400ms before it resolves into
+                         something intentional. Documented as a
+                         deliberate extension, not a drift.
+
+     Travel is capped at 8px everywhere, per DESIGN.md. On this
+     site motion signals composure, and composed things do not
+     move far.
+     ---------------------------------------------------------- */
+  --ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-brand-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-press: 120ms;
+  --duration-fast: 160ms;
+  --duration-base: 200ms;
+  --duration-enter: 420ms;
+  --reveal-travel: 8px;
+  --reveal-stagger: 60ms;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ------------------------------------------------------------
+   Semantic surface variables. One theme per page, swapped at
+   :root only. Sections never invert independently.
+   ------------------------------------------------------------ */
+:root {
+  --surface: #ffffff;
+  --surface-soft: #f7f9fb;
+  --surface-tint: #f0f5f7;
+  --text: #062a45;
+  --text-secondary: #3f5b71;
+  --text-muted: #5c7387;
+  --rule: #d5dfe5;
+  --rule-strong: #b9c7d0;
+  --link: #265c6e;
+  --link-hover: #1d4653;
+  --accent: #2f7288;
+  --accent-hover: #265c6e;
+  --accent-quiet: #3989a4;
+  --on-accent: #ffffff;
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --surface: #0a1f2e;
+    --surface-soft: #0c2637;
+    --surface-tint: #102e42;
+    --text: #dce7ed;
+    --text-secondary: #a9c0cd;
+    --text-muted: #8aa3b3;
+    --rule: #1c3a4d;
+    --rule-strong: #2a5064;
+    /* teal-300 is 8.09:1 on canvas-dark. Brand teal would be
+       3.71:1 here and fails, so it is never used on dark. */
+    --link: #7ebdd2;
+    --link-hover: #b3d8e5;
+    --accent: #7ebdd2;
+    --accent-hover: #b3d8e5;
+    --accent-quiet: #49a2c0;
+    --on-accent: #062a45;
+    color-scheme: dark;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--surface);
+    color: var(--text);
+    font-family: var(--font-sans);
+    line-height: 1.7;
+  }
+
+  ::selection {
+    background: var(--accent-quiet);
+    color: #ffffff;
+  }
+
+  /* Brand teal earns its keep here: a focus ring needs only 3:1
+     and it passes at 3.97:1. */
+  :focus-visible {
+    outline: 2px solid var(--accent-quiet);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  /* Measure cap of roughly 68 characters. The largest readability
+     lever available on pages that run 900 to 1200 words. */
+  .measure {
+    max-width: 34rem;
+  }
+  .measure-wide {
+    max-width: 45rem;
+  }
+
+  /* Serif display is never bolded. Weight 400 has enough presence
+     at display sizes; heavier reads as shouting. */
+  .display {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+
+  /* Reserved for the small label above a SECTION HEADING. Rationed:
+     at most one per three sections, or the page acquires the templated
+     rhythm every generated site has. */
+  .eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  /* Same treatment, different job: metadata inside a card, a table
+     header, or a breadcrumb. These are not section eyebrows and are
+     not counted as such. */
+  .meta-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  .link-underline {
+    text-decoration: underline;
+    text-decoration-color: var(--rule-strong);
+    text-underline-offset: 3px;
+    transition: text-decoration-color var(--duration-fast) var(--ease-brand);
+  }
+  .link-underline:hover {
+    text-decoration-color: var(--link);
+  }
+
+  /* ------------------------------------------------------------
+     Press feedback.
+
+     Applied to anything the user can push. The scale is what
+     makes an interface feel like it heard you: without it a
+     click is confirmed only by whatever happens next, which on
+     a navigation can be 200ms away. 0.985 is deliberately
+     under-scaled relative to the 0.97 that suits app UI —
+     buttons here are wide and low, and 0.97 on a 200px-wide
+     target reads as a flinch.
+
+     transform only, so it never disturbs layout, and it wins
+     over the previous `active:translate-y-px`, which moved the
+     text off the baseline grid for the duration of the press.
+     ------------------------------------------------------------ */
+  .press {
+    transition:
+      transform var(--duration-press) var(--ease-brand),
+      background-color var(--duration-fast) var(--ease-brand),
+      border-color var(--duration-fast) var(--ease-brand),
+      color var(--duration-fast) var(--ease-brand);
+  }
+  .press:active {
+    transform: scale(0.985);
+  }
+
+  /* Hover lift, gated behind a real pointer. On touch, :hover
+     latches after a tap and leaves the card stuck in its raised
+     state, which reads as a rendering bug. */
+  .lift {
+    transition:
+      transform var(--duration-base) var(--ease-brand),
+      border-color var(--duration-base) var(--ease-brand),
+      background-color var(--duration-base) var(--ease-brand),
+      box-shadow var(--duration-base) var(--ease-brand);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .lift:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+  }
+  .lift:active {
+    transform: translateY(0) scale(0.995);
+    transition-duration: var(--duration-press);
+  }
+
+  /* Navigation underline that grows from the left rather than
+     fading in. Direction carries the meaning: the rule is being
+     drawn under the word, not switched on beneath it. */
+  .nav-rule::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: -1px;
+    height: 2px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform var(--duration-base) var(--ease-brand);
+  }
+  .nav-rule[data-active]::after,
+  .nav-rule:hover::after {
+    transform: scaleX(1);
+  }
+  /* An active item is already underlined, so hovering it must not
+     replay the draw. Re-animating a state the user is already in
+     is noise. */
+  .nav-rule[data-active]::after {
+    transition: none;
+  }
+}
+
+/* ==============================================================
+   Scroll reveal
+
+   One IntersectionObserver per revealed block sets data-revealed
+   once and then stops observing. Nothing re-hides on scroll up:
+   content that has already been read must not perform again.
+
+   The hidden state is scoped to html.js, set by a blocking
+   inline script in the document body. Three reasons this is
+   worth the ugliness:
+
+     1. Without JavaScript, nothing would ever set data-revealed
+        and the entire page would stay at opacity 0. Gating on
+        html.js means a no-JS visitor gets the full document,
+        unstyled by motion. For a site whose audience includes
+        automated compliance and banking review tooling, a page
+        that renders blank without JS is a hard failure.
+     2. The script runs before the body paints, so there is no
+        flash of visible-then-hidden content.
+     3. Crawlers that do not execute JS still receive complete
+        markup; only the animation is absent.
+   ============================================================== */
+
+html.js [data-reveal],
+html.js [data-reveal-group] > * {
+  opacity: 0;
+  transform: translateY(var(--reveal-travel));
+}
+
+html.js [data-reveal][data-revealed],
+html.js [data-reveal-group][data-revealed] > * {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity var(--duration-enter) var(--ease-brand),
+    transform var(--duration-enter) var(--ease-brand);
+}
+
+/* Stagger. 60ms between items: below about 40ms the cascade is
+   not legible as a cascade, and above about 80ms the last item
+   in a six-item grid arrives late enough to feel like it was
+   waiting for something. Capped at six, which is the length of
+   every enumerable set on this site — the six subsidiaries. Past
+   that, items share the final delay rather than compounding into
+   a queue the user watches. */
+html.js [data-reveal-group][data-revealed] > * {
+  transition-delay: calc(var(--reveal-stagger) * 5);
+}
+html.js [data-reveal-group][data-revealed] > *:nth-child(1) {
+  transition-delay: 0ms;
+}
+html.js [data-reveal-group][data-revealed] > *:nth-child(2) {
+  transition-delay: var(--reveal-stagger);
+}
+html.js [data-reveal-group][data-revealed] > *:nth-child(3) {
+  transition-delay: calc(var(--reveal-stagger) * 2);
+}
+html.js [data-reveal-group][data-revealed] > *:nth-child(4) {
+  transition-delay: calc(var(--reveal-stagger) * 3);
+}
+html.js [data-reveal-group][data-revealed] > *:nth-child(5) {
+  transition-delay: calc(var(--reveal-stagger) * 4);
+}
+
+/* ==============================================================
+   Above-the-fold entrance
+
+   The hero cannot use the observer: it is already in view at
+   mount, so its reveal would wait on hydration and land as a
+   late jolt on a page that otherwise appeared instantly. A CSS
+   animation runs off the main thread, starts at first paint, and
+   is unaffected by how long React takes to arrive.
+
+   --enter-index carries the stagger. Same 60ms step as the
+   scroll groups, so the page has one cadence rather than two.
+   ============================================================== */
+@keyframes enter-rise {
+  from {
+    opacity: 0;
+    transform: translateY(var(--reveal-travel));
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.enter {
+  animation: enter-rise var(--duration-enter) var(--ease-brand) both;
+  animation-delay: calc(var(--enter-index, 0) * var(--reveal-stagger));
+}
+
+/* Same cascade, applied to direct children without having to index
+   each one by hand. Every page header on this site is the same shape —
+   a title and a standfirst inside one wrapper — so it takes one class
+   at the wrapper rather than a style attribute per line. */
+.enter-group > * {
+  animation: enter-rise var(--duration-enter) var(--ease-brand) both;
+}
+.enter-group > *:nth-child(1) {
+  animation-delay: 0ms;
+}
+.enter-group > *:nth-child(2) {
+  animation-delay: var(--reveal-stagger);
+}
+.enter-group > *:nth-child(3) {
+  animation-delay: calc(var(--reveal-stagger) * 2);
+}
+.enter-group > *:nth-child(n + 4) {
+  animation-delay: calc(var(--reveal-stagger) * 3);
+}
+
+/* ==============================================================
+   Reduced motion
+
+   Not a blanket kill switch. A global
+   `transition-duration: 0.01ms !important` would leave every
+   [data-reveal] block hidden until its observer fires and then
+   snap it in — strictly worse than no animation, and any block
+   whose observer never fires would stay invisible permanently.
+
+   So: neutralise the hidden states outright, then remove
+   movement. Opacity and colour transitions survive, because they
+   aid comprehension and cause no vestibular problem. This is the
+   distinction the spec actually asks for — less motion, not none.
+   ============================================================== */
+@media (prefers-reduced-motion: reduce) {
+  html.js [data-reveal],
+  html.js [data-reveal-group] > * {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .enter,
+  .enter-group > * {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-property: opacity, color, background-color, border-color,
+      box-shadow, text-decoration-color !important;
+    transition-duration: var(--duration-fast) !important;
+    scroll-behavior: auto !important;
+  }
 }
